@@ -8,8 +8,9 @@
 <form asp-action="Index" asp-controller="Spinner">
     <fieldset>
         <label>
-            <input placeholder=" Your First Name"  />
-            <span ></span>
+            <input placeholder="Your First Name" asp-for="FirstName" />
+           
+            <span asp-validation-for="FirstName"></span>
         </label>
         <label>
             <select asp-for="Luck">
