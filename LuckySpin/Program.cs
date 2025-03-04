@@ -4,9 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 /* Install Services using the builder.Services methods
  */
  builder.Services.AddMvc();
-builder.Services.AddScoped<Repository>(); 
+ 
+
 //Enable MVC and DIJ Services for this application
-builder.Services.AddSingleton<Repository>(); 
+builder.Services.AddSingleton<LuckySpin.Services.Repository>(); 
 builder.Services.AddTransient<LuckySpin.Services.TextTransform>();
 
 

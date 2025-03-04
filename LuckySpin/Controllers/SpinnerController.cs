@@ -11,7 +11,7 @@ namespace LuckySpin.Controllers
     {
         //DIJ in 4 STEPS -
         //Done: 0) Register the Repository class as a service in Program.cs
-        private readonly Repository _repository; 
+        private Repository repository; 
         //Done: 1) add an instance variable here of type Repository
 
 
@@ -66,7 +66,7 @@ namespace LuckySpin.Controllers
         public IActionResult LuckList()
         {
                 //Done: Pass the repository's Player Spins to the LuckList View
-            var spins = _repository.GetPlayerSpins();
+            var spins = _repository.PlayerSpins();
                 return View(spins);
         }
 
