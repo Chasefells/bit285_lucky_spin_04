@@ -11,7 +11,7 @@ namespace LuckySpin.Controllers
     {
         //DIJ in 4 STEPS -
         //Done: 0) Register the Repository class as a service in Program.cs
-        private Repository repository; 
+        private Repository _repository; 
         //Done: 1) add an instance variable here of type Repository
 
 
